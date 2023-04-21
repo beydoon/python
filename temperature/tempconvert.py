@@ -15,21 +15,21 @@ args = parser.parse_args()
 if args.verbose and args.fahr:    
     c = (args.val - 32)/1.8
     #print(f"{args.val}f is {c:.2f}c")
-    print(f"centigrate -> ({args.val}f - 32)/1.8 = {c}c")
+    print(f"centigrate -> ({args.val}°f - 32)/1.8 = {c}°c")
     exit(0)
 
 if args.fahr:
     c = (args.val - 32)/1.8
-    print(f"{args.val}f is {c:.2f}c")
+    print(f"{args.val}°f is {c:.2f}°c")
     exit(0)
 
 if args.verbose and args.cent:
     f = (args.val * 9 /5)/32
     #print(f"{args.val}c is {f:.2f}f")
-    print(f"fahrenhiet -> ({args.val}c * 9/5)/32 = {f}f")
+    print(f"fahrenhiet -> ({args.val}°c * 9/5)/32 = {f}°f")
     exit(0)
 
 if args.cent:
     f = (args.val * 9 /5)/32
-    print(f"{args.val}c is {f:.2f}f")
+    print(f"{args.val}°c is {f:.2f}°f")
     exit(0)
